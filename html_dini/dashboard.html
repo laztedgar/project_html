@@ -1,0 +1,268 @@
+<!----
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Biodata Diri</title>
+
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .dashboard {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        .dashboard td {
+            border: 1px solid #cccccc;
+        }
+
+        .judul {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+        }
+
+        .judul h2 {
+            margin: 15px;
+        }
+
+        .menu {
+            width: 20%;
+            vertical-align: top;
+            padding: 20px;
+            background-color: #eeeeee;
+        }
+
+        .menu h3 {
+            margin-top: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        .menu a:hover {
+            color: blue;
+        }
+
+        .isi {
+            vertical-align: top;
+            padding: 20px;
+        }
+
+        .isi h3 {
+            margin-top: 0;
+        }
+
+        .footer {
+            background-color: #eeeeee;
+            text-align: center;
+        }
+
+        .footer td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+  <table width="100%" border="1">
+    <tr bgcolor="#cccccc">
+       <td colspan="2" align="center"><h2>Dashboard</h2></td>
+    </tr>
+    <tr>
+      <td width="20%" valign="top">
+         <h3>Menu</h3>
+         <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="buku.html">Buku</a></li>
+            <li><a href="login.html">Loguot</a></li>
+         </ul>
+      </td>
+      <td valign="top">
+        <h3>Selamat Datang!</h3>
+        <p>Ini adalah sistem informasi menggunakan HTML.</p>
+        <P>Gunakan menu di samping untuk memilih menu.</P>
+      </td> 
+    </tr>
+    
+    <!-Footer
+     <tr bgcolor="#eeeeee">
+        <td colspan="2" align="center">
+          &copy; Dini Nur Meilia 2026
+        </td>
+    </tr>
+  </table>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Dashboard Biodata Diri</title>
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+        }
+        
+        .dashboard {
+            width: 100%;
+            margin: auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: white;
+            overflow: hidden;
+            height: 100vh;
+        }
+        
+        .dashboard td {
+            border: none;
+        }
+        
+        .judul {
+            background-color: #4e065c;
+            color: white;
+            text-align: center;
+        }
+        .judul h2 {
+            margin: 0;
+            padding: 22px;
+            font-size: 26px;
+        }
+    
+        .menu {
+            width: 20%;
+            vertical-align: top;
+            padding: 25px;
+            background-color: #9318ac;
+            border-right: 1px solid #e2e8f0 !important;
+        }
+        .menu h3 {
+            margin-top: 0;
+            color: #fdfeff;
+            font-size: 20px;
+        }
+        
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+    
+        .menu li {
+            margin-bottom: 10px;
+        }
+        
+        .menu a {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #e1e9f3;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        
+        .menu a:hover {
+            background-color: #5e0661;
+            color: white;
+            padding-left: 20px;
+        }
+        
+        .isi {
+            vertical-align: top;
+            padding: 30px;
+            min-height: 250px;
+        }
+        .isi h3 {
+            margin-top: 0;
+            color: #1a1010;
+            font-size: 24px;
+        }
+        .isi p {
+            color: #64748b;
+            line-height: 1.7;
+        }
+        .isi iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        
+        .footer {
+            background-color: #e4cfeb;
+            text-align: center;
+            border-top: 1px solid #e2e8f0 !important;
+            height: 1px;
+        }
+        .footer td {
+            padding: 18px;
+            color: #64748b;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+    <table class="dashboard">
+        <!-- Judul -->
+        <tr class="judul">
+            <td colspan="2">
+                <h2>Dashboard</h2>
+            </td>
+        </tr>
+
+        <!-- Isi -->
+        <tr>
+            <!-- Menu -->
+            <td class="menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="data:text/html,<h3>Selamat Datang</h3><p>Pilih menu di sebelah kiri untuk melihat informasi.</p>" target="contentFrame">Dashboard</a></li>
+                    <!-- <li><a href="dashboard.html" target="contentFrame">Dashboard</a></li>-->
+                    <li><a href="/dinim/pegawai.php" target="contentFrame">Pegawai</a></li>
+                    <li><a href="/dinim/barang.php" target="contentFrame">Barang</a></li>
+                    <li><a href="/dinim/transaksi.php" target="contentFrame">Transaksi</a></li>
+                    <li><a href="login.html" target="_top">Logout</a></li>
+                    
+                    
+                </ul>
+            </td>
+            <!-- Konten -->
+            <td class="isi">
+                <iframe name="contentFrame" src="<h3>Selamat Datang</h3><p>Pilih menu di sebelah kiri untuk melihat informasi.</p>"></iframe>
+    </td>
+            </td>
+
+            
+        </tr>
+
+        <!-- Footer -->
+        <tr class="footer">
+            <td colspan="2">
+                &copy; Dini Nur Meilia 2026
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
